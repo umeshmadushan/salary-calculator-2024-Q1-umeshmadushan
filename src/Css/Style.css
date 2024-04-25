@@ -1,0 +1,37 @@
+h3{
+    font-size: 20px !important;
+}
+
+.calculator-card{
+    width: 680px;
+    min-height: 93vh;
+}
+
+.receipt-card{
+    width: 530px;
+    min-height: 93vh;
+}
+
+.common_row{
+    width: 356px;
+}
+
+.input_field{
+    width: 356px;
+    height: 48px;
+}
+
+.input_field_type{
+    width: 212px;
+    height: 48px;
+}
+
+.input_field_amount{
+    width: 136px;
+    height: 48px;
+}
+
+.close_btn{
+    width: 32px;
+    height: 32px;
+}
