@@ -2,11 +2,12 @@ import React from "react";
 
 interface CheckBoxProps {
   className?: string;
-  onClick?: () => void;
   label: string;
+  checked?: boolean;
+  [key: string]: any; // Allow any other props
 }
 
-const CheckBox: React.FC<CheckBoxProps> = ({ label, onClick, className }) => {
+const CheckBox: React.FC<CheckBoxProps> = ({ label, className, checked, ... rest}) => {
   return (
     <div className="d-flex align-items-center">
       <input
@@ -14,6 +15,8 @@ const CheckBox: React.FC<CheckBoxProps> = ({ label, onClick, className }) => {
         type="checkbox"
         value=""
         id="flexCheckDefault"
+        checked={checked}
+        {...rest}
       />
       <label className="form-check-label" htmlFor="flexCheckDefault">
         {label}

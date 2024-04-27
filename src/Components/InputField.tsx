@@ -2,14 +2,14 @@ import React from 'react';
 
 interface InputFieldProps {
   className?: string;
-  placholder?: string
+  placeholder?: string;
   [key: string]: any; // Allow any other props
 }
 
-const InputField: React.FC<InputFieldProps> = ({className,placholder}) => {
+const InputField: React.FC<InputFieldProps> = ({className, placeholder, ...rest}) => {
   return (
     <div className="form-group">
-      <input className={className} placeholder={placholder}/>
+      <input className={className} placeholder={placeholder} {...rest}/>
     </div>
   );
 };
